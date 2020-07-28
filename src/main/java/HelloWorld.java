@@ -10,5 +10,6 @@ public class HelloWorld implements SparkApplication {
 	@Override
 	public void init() {
 		get("/hello", (req, res) -> "Hello World");
+		get("/error", (req, res) -> "Page Not Found");
 	}
 }
